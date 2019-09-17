@@ -4,17 +4,17 @@ Component({
     color: "#7A7E83",
     selectedColor: "#3cc51f",
     list: [{
-      pagePath: "/pages/index/index",
+      pagePath: "/pages/home/home",
       iconPath: "/images/home.png",
       selectedIconPath: "/images/home-o.png",
       text: "主页"
     },{
-      pagePath: "/pages/index/index",
+        pagePath: "/pages/subscribe/subscribe",
       iconPath: "/images/yuyue.png",
       selectedIconPath: "/images/yuyue-o.png",
       text: "预约"
     },{
-      pagePath: "/pages/index/index",
+      
       iconPath: "/images/zixun.png",
       selectedIconPath: "/images/zixun-o.png",
       text: "咨询"

@@ -1,27 +1,34 @@
-Page({
-  data: {
-    list: [{
-      text: "主页",
-      iconPath: "/images/home.png",
-      selectedIconPath: "/images/home-o.png",
-    },
-    {
-      text: "预约",
-      iconPath: "/images/yuyue.png",
-      selectedIconPath: "/images/yuyue-o.png",
-    }, 
-    {
-      text: "咨询",
-      iconPath: "/images/zixun.png",
-      selectedIconPath: "/images/zixun-o.png",
-    }]
+// pages/home/home.js
+Component({
+  /**
+   * 组件的属性列表
+   */
+  properties: {
+
   },
-  tabChange(e) {
-    console.log('tab change', e)
-    if (e.detail.index == 2) {
-      wx.makePhoneCall({
-        phoneNumber: '18817580215' 
-      })
+
+  /**
+   * 组件的初始数据
+   */
+  data: {
+
+  },
+
+  /**
+   * 组件的方法列表
+   */
+  methods: {
+
+  },
+
+  pageLifetimes: {
+    show() {
+      if (typeof this.getTabBar === 'function' &&
+        this.getTabBar()) {
+        this.getTabBar().setData({
+          selected: 0
+        })
+      }
     }
   }
-});
+})

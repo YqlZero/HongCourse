@@ -82,12 +82,12 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 11);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 11:
+/***/ 7:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -95,33 +95,105 @@ module.exports =
 
 Component({
     options: {
-        addGlobalClass: true
+        addGlobalClass: true,
+        multipleSlots: true
     },
     properties: {
+        hover: {
+            type: Boolean,
+            value: false
+        },
+        link: {
+            type: Boolean,
+            value: false
+        },
         extClass: {
             type: String,
             value: ''
         },
-        list: {
-            type: Array,
-            value: []
+        iconClass: {
+            type: String,
+            value: ''
         },
-        current: {
-            type: Number,
-            value: 0
+        icon: {
+            type: String,
+            value: ''
+        },
+        title: {
+            type: String,
+            value: ''
+        },
+        value: {
+            type: String,
+            value: ''
+        },
+        showError: {
+            type: Boolean,
+            value: false
+        },
+        prop: {
+            type: String,
+            value: ''
+        },
+        url: {
+            type: String,
+            value: ''
+        },
+        footerClass: {
+            type: String,
+            value: ''
+        },
+        footer: {
+            type: String,
+            value: ''
+        },
+        inline: {
+            type: Boolean,
+            value: true
         }
     },
+    relations: {
+        '../form/form': {
+            type: 'ancestor'
+        },
+        '../cells/cells': {
+            type: 'ancestor'
+        }
+    },
+    data: {
+        inForm: false
+    },
     methods: {
-        tabChange: function tabChange(e) {
-            var index = e.currentTarget.dataset.index;
-
-            if (index === this.data.current) {
-                return;
-            }
+        setError: function setError(error) {
             this.setData({
-                current: index
+                error: error || false
             });
-            this.triggerEvent('change', { index: index, item: this.data.list[index] });
+        },
+        setInForm: function setInForm() {
+            this.setData({
+                inForm: true
+            });
+        },
+        setOuterClass: function setOuterClass(className) {
+            this.setData({
+                outerClass: className
+            });
+        },
+        navigateTo: function navigateTo() {
+            var _this = this;
+
+            var data = this.data;
+            if (data.url && data.link) {
+                wx.navigateTo({
+                    url: data.url,
+                    success: function success(res) {
+                        _this.triggerEvent('navigatesuccess', res, {});
+                    },
+                    fail: function fail(_fail) {
+                        _this.triggerEvent('navigateerror', _fail, {});
+                    }
+                });
+            }
         }
     }
 });

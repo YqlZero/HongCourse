@@ -1,0 +1,7 @@
+<!--pages/subresult/subresult.wxml-->
+<mp-msg type="success" title="恭喜您预约成功！">
+    <view slot="desc"></view>    
+    <view slot="handle">
+        <button class="weui-btn" type="primary" bindtap="bindButtonTap">关闭</button>
+    </view>  
+</mp-msg>

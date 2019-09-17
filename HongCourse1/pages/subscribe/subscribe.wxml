@@ -1,2 +1,28 @@
 <!--pages/subscribe/subscribe.wxml-->
-<text>pages/subscribe/subscribe.wxml</text>
+<view class="container-sub">
+  <cover-image src="/images/logo.png"></cover-image>
+  <image class="blackboard" src="/images/blackboard.png"></image>
+  <!--WXML示例代码-->
+  <view class="page adjust-page">
+      <view class="page__bd">
+          <mp-form id="form" rules="{{rules}}" models="{{formData}}">
+              <mp-cells title="我要预约" footer="留下您的联系方式，我们会尽快与您联系介绍课程。">
+                <mp-cell prop="name" title="姓名" ext-class="">
+                    <input bindinput="formInputChange" data-field="name" class="weui-input" placeholder="请输入姓名"/>
+                </mp-cell>
+                <mp-cell prop="mobile" title="联系方式" ext-class="">
+                    <input bindinput="formInputChange" data-field="mobile" class="weui-input" placeholder="请输入联系方式"/>    
+                </mp-cell>
+                <mp-cell prop="courses" title="预约课程" ext-class="">
+                      <picker  bindchange="bindDateChange" value="{{date}}" range="{{range}}">
+                          <view class="weui-input">{{date}}</view>
+                      </picker>
+                  </mp-cell>
+              </mp-cells>
+          </mp-form>         
+          <view class="weui-btn-area">
+              <button class="weui-btn" type="primary" bindtap="submitForm">提交</button>
+          </view>
+      </view>
+  </view>
+</view>

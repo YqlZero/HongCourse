@@ -3,6 +3,20 @@
     "pages/home/home",
     "pages/subscribe/subscribe"
   ],
+  
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/subscribe/subscribe",
+        "text": "预约"
+      }
+    ]
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",

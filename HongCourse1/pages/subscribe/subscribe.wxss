@@ -1,1 +1,15 @@
 /* pages/subscribe/subscribe.wxss */
+.container-sub {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+} 
+
+.blackboard {
+  align-self: center;
+}
+
+.adjust-page {
+  position: relative;
+  top: -180rpx;
+}
