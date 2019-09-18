@@ -1,1 +1,27 @@
 /* pages/home/home.wxss */
+.container-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swiper {
+  position: relative;
+  height: 100rpx;
+}
+
+.slide-image {
+  width: 100%; 
+  height: 100%;
+}
+
+.topu-font {
+  position: relative;
+  color: #fff;
+}
+
+.home-bg {
+  position: absolute;
+  width: 100%;
+  height: 350rpx;
+}

@@ -26,7 +26,14 @@ Component({
     switchTab(e) {
       const data = e.currentTarget.dataset
       const url = data.path
-      wx.switchTab({ url })
+      if (data.index == 2){
+        wx.makePhoneCall({
+          phoneNumber: '18817580215',
+        })
+      }else{
+        wx.switchTab({ url })
+      }
+      
       this.setData({
         selected: data.index
       })

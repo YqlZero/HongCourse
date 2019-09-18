@@ -1,3 +1,19 @@
 <!--pages/home/home.wxml-->
+<view class="container-home">
+  <image class="home-bg" src="/images/home-bg.png" >
+  </image>
+  <swiper indicator-dots="{{indicatorDots}}" class="swiper"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="topu-font">托普教育</view>
+  <mp-searchbar placeholder="请输入关键字搜索" bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
+  <view></view>
+</view>
 
 
