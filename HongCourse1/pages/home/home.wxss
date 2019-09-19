@@ -3,10 +3,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 
 .swiper {
-  position: relative;
+  width: 100%;
   height: 100rpx;
 }
 
@@ -18,10 +19,24 @@
 .topu-font {
   position: relative;
   color: #fff;
+  font-size: 50rpx;
+  font-weight: 600;
+  margin: 30rpx 0;
 }
 
 .home-bg {
   position: absolute;
   width: 100%;
   height: 350rpx;
+}
+
+.courses {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.course {
+  width: 50%;
+  height: 50%;
 }

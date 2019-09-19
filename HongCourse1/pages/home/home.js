@@ -12,9 +12,9 @@ Component({
    */
   data: {
     imgUrls: [
-      '/images/logo.png',
-      '/images/logo1.png',
-      '/images/logo2.png'
+      '/images/logo-n.png',
+      '/images/logo-n1.png',
+      '/images/logo-n2.png'
     ],
     indicatorDots: false,
     autoplay: true,
