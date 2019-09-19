@@ -11,23 +11,27 @@
     </block>
   </swiper>
   <view class="topu-font">托普教育</view>
-  <mp-searchbar placeholder="请输入关键字搜索" bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
+  <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" maxlength="10" placeholder="最大输入长度为10" />
+      </view>
+    </view>
   <view class="courses">
     <view class="course">
-      <image src="/images/oversea.png"></image>
-      <label>海外留学</label>
+      <image class="img-course"  src="/images/oversea.png"></image>
+      <view>海外留学</view>
     </view>
     <view class="course">
-      <image src="/images/senior.png"></image>
-      <label>高中课程</label>
+      <image class="img-course" mode="aspectFit" src="/images/senior.png"></image>
+      <view>高中课程</view>
     </view>
     <view class="course">
-      <image src="/images/reread.png"></image>
-      <label>中复班</label>
+      <image class="img-course" mode="aspectFit" src="/images/reread.png"></image>
+      <view>中复班</view>
     </view>
     <view class="course">
-      <image src="/images/junior.png"></image>
-      <label>初中课程</label>
+      <image class="img-course" mode="aspectFit" src="/images/junior.png"></image>
+      <view>初中课程</view>
     </view>
   </view>
 </view>

@@ -30,6 +30,15 @@
   height: 350rpx;
 }
 
+.view-input {
+  background-color: #FFF;
+}
+
+.search {
+  background-color: #FFF;
+  border: 1px solid;
+}
+
 .courses {
   display: flex;
   flex-flow: row wrap;
@@ -38,5 +47,13 @@
 
 .course {
   width: 50%;
-  height: 50%;
+  padding: 100rpx 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-course {
+  width: 200rpx;
+  height: 200rpx;
 }
