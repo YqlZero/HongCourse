@@ -1,9 +1,10 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/subscribe/subscribe"
+    "pages/subscribe/subscribe",
+    "pages/courselist/courselist",
+    "pages/coursedetail/coursedetail"
   ],
-  
   "tabBar": {
     "custom": true,
     "list": [

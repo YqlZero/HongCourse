@@ -11,26 +11,26 @@
     </block>
   </swiper>
   <view class="topu-font">托普教育</view>
-  <view class="weui-cells weui-cells_after-title">
+  <view class="weui-cells weui-cells_after-title search">
       <view class="weui-cell weui-cell_input">
-        <input class="weui-input" maxlength="10" placeholder="最大输入长度为10" />
+        <input class="weui-input" maxlength="10" placeholder="搜索：高一/托福/生物" />
       </view>
     </view>
   <view class="courses">
     <view class="course">
-      <image class="img-course"  src="/images/oversea.png"></image>
+      <image class="img-course" bindtap="bindButtonTap" src="/images/oversea.png" mark:text="海外留学"></image>
       <view>海外留学</view>
     </view>
     <view class="course">
-      <image class="img-course" mode="aspectFit" src="/images/senior.png"></image>
+      <image class="img-course" bindtap="bindButtonTap"  src="/images/senior.png" mark:text="高中课程"></image>
       <view>高中课程</view>
     </view>
     <view class="course">
-      <image class="img-course" mode="aspectFit" src="/images/reread.png"></image>
+      <image class="img-course" bindtap="bindButtonTap"  src="/images/reread.png"></image>
       <view>中复班</view>
     </view>
     <view class="course">
-      <image class="img-course" mode="aspectFit" src="/images/junior.png"></image>
+      <image class="img-course" bindtap="bindButtonTap" src="/images/junior.png"></image>
       <view>初中课程</view>
     </view>
   </view>

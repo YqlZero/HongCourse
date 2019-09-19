@@ -30,13 +30,9 @@
   height: 350rpx;
 }
 
-.view-input {
-  background-color: #FFF;
-}
-
 .search {
-  background-color: #FFF;
-  border: 1px solid;
+  border-radius: 10rpx;
+  padding: 15rpx 0;
 }
 
 .courses {

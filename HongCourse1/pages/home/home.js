@@ -47,6 +47,15 @@ Component({
     selectResult: function (e) {
       console.log('select result', e.detail)
     },
+    bindButtonTap: function (e) {
+      wx.navigateTo({
+        url: '../courselist/courselist',
+        success: function (res) {
+          // 通过eventChannel向被打开页面传送数据
+          res.eventChannel.emit('acceptDataFromOpenerPage', { courseName: e.mark.text })
+        }
+      });
+    },
   },
 
   pageLifetimes: {
