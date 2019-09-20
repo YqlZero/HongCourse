@@ -52,7 +52,7 @@ Component({
         url: '../courselist/courselist',
         success: function (res) {
           // 通过eventChannel向被打开页面传送数据
-          res.eventChannel.emit('acceptDataFromOpenerPage', { courseName: e.mark.text })
+          res.eventChannel.emit('acceptDataFromOpenerPage', { index: e.mark.index })
         }
       });
     },

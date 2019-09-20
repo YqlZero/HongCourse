@@ -18,11 +18,11 @@
     </view>
   <view class="courses">
     <view class="course">
-      <image class="img-course" bindtap="bindButtonTap" src="/images/oversea.png" mark:text="海外留学"></image>
+      <image class="img-course" bindtap="bindButtonTap" src="/images/oversea.png" mark:index="0"></image>
       <view>海外留学</view>
     </view>
     <view class="course">
-      <image class="img-course" bindtap="bindButtonTap"  src="/images/senior.png" mark:text="高中课程"></image>
+      <image class="img-course" bindtap="bindButtonTap"  src="/images/senior.png" mark:index="1"></image>
       <view>高中课程</view>
     </view>
     <view class="course">
