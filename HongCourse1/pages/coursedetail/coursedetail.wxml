@@ -1,2 +1,21 @@
 <!--pages/coursedetail/coursedetail.wxml-->
-<text>pages/coursedetail/coursedetail.wxml</text>
+<view class="coursedetail-container">
+  <view class="title-logo {{titleLogoShape}} {{titleLogoColor}}">
+    <view>{{category}}</view>
+    <view>{{category_en}}</view>
+  </view>
+  <image class="arrow-down" src="/images/arrow-down.png" wx:if="{{colorIndex===0}}"></image>
+  <image class="arrow-down" src="/images/arrow-down-grey.png" wx:else></image>
+  <view class="title">
+    <view>{{courseName}}</view>
+    <view>{{coursePrice}}</view>
+  </view>
+  <view class="table">
+    <view class="row" wx:for="{{table}}">
+      <view class="row-img"><image class="img" src="{{item.imgPath}}"></image></view>     
+      <view class="row-text {{rowTextColor}}">
+        <rich-text nodes="{{item.text}}"></rich-text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,1 +1,36 @@
 /* pages/courselist/courselist.wxss */
+.list-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.left {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; 
+  background-color: #ececec;
+}
+
+.left-item {
+  padding: 20rpx 0;
+  text-align: center;
+}
+
+.bg-white {
+  background-color: #FFF;
+}
+
+.bg-grey {
+  background-color: #ececec;
+}
+
+.right {
+  width: 70%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 20rpx 0;
+}

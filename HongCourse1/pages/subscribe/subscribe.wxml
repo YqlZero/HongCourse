@@ -1,5 +1,6 @@
 <!--pages/subscribe/subscribe.wxml-->
 <view class="container-sub">
+  <mp-toptips msg="{{error}}" type="error" show="{{error}}"></mp-toptips>
   <cover-image src="/images/logo.png"></cover-image>
   <image class="blackboard" src="/images/blackboard.png"></image>
   <!--WXML示例代码-->
@@ -14,8 +15,8 @@
                     <input bindinput="formInputChange" data-field="mobile" class="weui-input" placeholder="请输入联系方式"/>    
                 </mp-cell>
                 <mp-cell prop="courses" title="预约课程" ext-class="">
-                      <picker  bindchange="bindDateChange" value="{{date}}" range="{{range}}">
-                          <view class="weui-input">{{date}}</view>
+                      <picker  bindchange="bindPickerChange" value="{{index}}" range="{{courseList}}">
+                          <view class="weui-input">{{courseList[index]}}</view>
                       </picker>
                   </mp-cell>
               </mp-cells>

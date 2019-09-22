@@ -1,0 +1,21 @@
+<!--pages/searchresult/searchresult.wxml-->  
+<view class="search-container">
+  <view class="weui-form-preview" wx:for="{{searchResultList}}" bindtap="bindViewTap" mark:index="{{item.index}}" mark:listIndex="{{item.listIndex}}">
+      <view class="weui-form-preview__hd">
+          <view class="weui-form-preview__item">
+              <view class="weui-form-preview__value_in-hd">{{item.searchContent}}</view>
+              <view class="weui-price">{{item.tableHeaderFee}}</view>
+          </view>
+      </view>
+      <view class="weui-form-preview__bd">
+          <view class="weui-form-preview__item">
+              <view class="weui-form-preview__label">课程内容</view>
+              <view class="weui-form-preview__value">{{item.listData[2].text}}</view>
+          </view>
+          <view class="weui-form-preview__item">
+              <view class="weui-form-preview__label">课程时间</view>
+              <view class="weui-form-preview__value">{{item.listData[3].text}}</view>
+          </view>
+      </view>
+  </view>
+</view> 

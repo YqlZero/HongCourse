@@ -11,8 +11,12 @@ Component({
    * 组件的初始数据
    */
   data: {
+    index: 0,
     showTopTips: true,
-
+    error: "",
+    name: "",
+    mobile: "",
+    course: "",
     formData: {
 
     },
@@ -21,8 +25,11 @@ Component({
       rules: { required: true, message: '姓名和联系方式必填' },
     }, { // 多个规则
       name: 'mobile',
-      rules: [{ required: true, message: '姓名和联系方式必填' }, { mobile: true, message: 'mobile格式不对' }],
-    }]
+      rules: [{ required: true, message: '姓名和联系方式必填' }],
+    }],
+    courseList: [
+      "","托福","雅思","生物","地理","数学","英语","语文"
+    ]
   },
 
   /**
@@ -32,8 +39,10 @@ Component({
     formInputChange(e) {
       const { field } = e.currentTarget.dataset
       this.setData({
-        [`formData.${field}`]: e.detail.value
+        [`formData.${field}`]: e.detail.value,
+        [`${field}`]: e.detail.value
       })
+      //console.log(this.data.name)
     },
     submitForm() {
       this.selectComponent('#form').validate((valid, errors) => {
@@ -52,7 +61,13 @@ Component({
           })
         }
       })
-    }
+    },
+    bindPickerChange: function (e) {
+      //console.log('picker发送选择改变，携带值为', e.detail.value)
+      this.setData({
+        index: e.detail.value
+      })
+    },
   },
 
   pageLifetimes: {
