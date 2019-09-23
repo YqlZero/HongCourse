@@ -26,3 +26,7 @@
 .weui-price {
   float: right;
 }
+
+.weui-msg {
+  background-color: #ececec;
+}

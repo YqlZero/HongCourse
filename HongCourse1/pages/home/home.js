@@ -20,7 +20,16 @@ Component({
     indicatorDots: false,
     autoplay: true,
     interval: 3000,
-    duration: 1000
+    duration: 1000,
+    latitude: 31.147340,
+    longitude: 121.135830,
+    markers: [{
+      latitude: 31.147340,
+      longitude: 121.135830,
+      label: {
+        content: "托普教育"
+      }
+    }],
   },
 
   lifetimes: {
@@ -30,7 +39,7 @@ Component({
         search: this.search.bind(this)
       })
       wx.setNavigationBarTitle({
-        title: "鸿课程"
+        title: "托普教育"
       })
     },
     moved: function () { },

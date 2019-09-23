@@ -13,11 +13,11 @@
   </swiper>
   <view class="topu-font">托普教育</view>
   <view class="weui-cells weui-cells_after-title search">    
-      <view class="weui-cell weui-cell_input"> 
-        <icon type="search" color="rgb(112,173,71)"/>     
-        <input class="weui-input" maxlength="10" placeholder="高一/托福/生物" bindconfirm="bindSearchConfirm" />
-      </view>
+    <view class="weui-cell weui-cell_input"> 
+      <icon type="search" color="rgb(112,173,71)"/>     
+      <input class="weui-input" maxlength="10" placeholder="高一/托福/生物" bindconfirm="bindSearchConfirm" />
     </view>
+  </view>
   <view class="courses">
     <view class="course">
       <image class="img-course" bindtap="bindButtonTap" src="/images/oversea.png" mark:index="0"></image>
@@ -35,6 +35,13 @@
       <image class="img-course" bindtap="bindClosedTap" src="/images/junior.png"></image>
       <view>初中课程</view>
     </view>
+  </view>
+  <view class="page-bottom">
+    <view>
+      <view class="light-font">机构地址：上海市青浦区青湖路800弄20号</view>
+    </view>
+    <map id="myMap" class="map" longitude="{{longitude}}" latitude="{{latitude}}"
+    scale='16' subkey="GXNBZ-KYNLK-756J6-ASWJI-V52R7-WVFOF"  markers="{{markers}}"></map>
   </view>
 </view>
 

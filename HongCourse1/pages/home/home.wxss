@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
 }
 
 .swiper {
@@ -57,4 +56,20 @@
 .weui-input {
   margin-left: 20rpx;
   font-size:30rpx;
+}
+
+.light-font {
+  color: rgb(118,113,113);
+  font-size: 30rpx;
+}
+
+.page-bottom {
+  width: 80%;
+  margin: 50rpx 0;
+  height: 600rpx;  
+}
+
+.map {
+  width: 100%;
+  height: 400rpx;  
 }

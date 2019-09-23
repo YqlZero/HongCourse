@@ -26,7 +26,7 @@ const tableData = [
       { "imgPath": "/images/clock.png", "text": "60小时，30节（冲90分）" },
       { "imgPath": "/images/desk.png", "text": "3人" },
       { "imgPath": "/images/book.png", "text": "托福阅读、讲座听力、对话听力、托福口语、综合写作、独立写作、托福词汇" },
-      { "imgPath": "/images/calendar.png", "text": "9月21日—12月21日（周六/周日班）" },
+      { "imgPath": "/images/calendar.png", "text": "周六班、周日班" },
       { "imgPath": "/images/level.png", "text": "<label class='table-big-font'>美国、加拿大留学</label>意向的高中学生", }
     ],
     listIndex: 0
@@ -42,7 +42,7 @@ const tableData = [
       { "imgPath": "/images/clock.png", "text": "70小时，35节" },
       { "imgPath": "/images/desk.png", "text": "6-10人" },
       { "imgPath": "/images/book.png", "text": "托福阅读、讲座听力、对话听力、托福口语、综合写作、独立写作、托福词汇、模考" },
-      { "imgPath": "/images/calendar.png", "text": "9月21日—12月21日（周六/周日班）" },
+      { "imgPath": "/images/calendar.png", "text": "周六班、周日班" },
       { "imgPath": "/images/level.png", "text": "<label class='table-big-font'>美国、加拿大留学</label>意向的高中学生", }
     ],
     listIndex: 0
@@ -58,7 +58,7 @@ const tableData = [
       { "imgPath": "/images/clock.png", "text": "60小时，30节（冲7.5分）" },
       { "imgPath": "/images/desk.png", "text": "3人" },
       { "imgPath": "/images/book.png", "text": "雅思阅读、雅思听力、雅思口语、图表写作、独立写作、雅思词汇" },
-      { "imgPath": "/images/calendar.png", "text": "9月21日—12月21日（周六/周日班）" },
+      { "imgPath": "/images/calendar.png", "text": "周六班、周日班" },
       { "imgPath": "/images/level.png", "text": "<label class='table-big-font'>英、澳、新加坡及欧洲留学</label>意向的高中学生", }
     ],
     listIndex: 0
@@ -74,7 +74,7 @@ const tableData = [
       { "imgPath": "/images/clock.png", "text": "70小时，35节" },
       { "imgPath": "/images/desk.png", "text": "6-10人" },
       { "imgPath": "/images/book.png", "text": "雅思阅读、雅思听力、雅思口语、图表写作、独立写作、雅思词汇、模考" },
-      { "imgPath": "/images/calendar.png", "text": "9月21日—12月21日（周六/周日班）" },
+      { "imgPath": "/images/calendar.png", "text": "周六班、周日班" },
       { "imgPath": "/images/level.png", "text": "<label class='table-big-font'>英、澳、新加坡及欧洲留学</label>意向的高中学生", }
     ],
     listIndex: 0
@@ -154,7 +154,7 @@ const tableData = [
       { "imgPath": "/images/clock.png", "text": "15节，90分钟/节" },
       { "imgPath": "/images/desk.png", "text": "10-15人" },
       { "imgPath": "/images/book.png", "text": "高一数学集合概念、函数与反函数运用、不等式等知识点补习" },
-      { "imgPath": "/images/calendar.png", "text": "周六班（9.21开班）、周日班（9.22开班）、寒假集训班" },
+      { "imgPath": "/images/calendar.png", "text": "周六班（10.12开班）、周日班（10.13开班）、周中晚班、寒假集训班" },
       { "imgPath": "/images/level.png", "text": "<label class='table-big-font'>所有高一学生（不分文理）</label>" }
     ],
     listIndex: 1
@@ -170,7 +170,7 @@ const tableData = [
       { "imgPath": "/images/clock.png", "text": "15节，90分钟/节" },
       { "imgPath": "/images/desk.png", "text": "10-15人" },
       { "imgPath": "/images/book.png", "text": "针对高二下学期一模考内容" },
-      { "imgPath": "/images/calendar.png", "text": "周六班（10.12开班）、周日班（10.13开班）、寒假集训班" },
+      { "imgPath": "/images/calendar.png", "text": "周六班（10.12开班）、周日班（10.13开班）、周中晚班、寒假集训班" },
       { "imgPath": "/images/level.png", "text": "<label class='table-big-font'>所有高二学生（不分文理）</label>" }
     ],
     listIndex: 1
@@ -186,7 +186,7 @@ const tableData = [
       { "imgPath": "/images/clock.png", "text": "15节，90分钟/节" },
       { "imgPath": "/images/desk.png", "text": "10-15人" },
       { "imgPath": "/images/book.png", "text": "高一英语语法：句子成分、非谓语、定语从句、状语从句、名词性从句、倒装句等重点语法" },
-      { "imgPath": "/images/calendar.png", "text": "周六班（9.21开班）、周日班（9.22开班）、寒假集训班" },
+      { "imgPath": "/images/calendar.png", "text": "周六班（10.12开班）、周日班（10.13开班）、周中晚班、寒假集训班" },
       { "imgPath": "/images/level.png", "text": "<label class='table-big-font'>所有高一学生（不分文理）</label>" }
     ],
     listIndex: 1
@@ -202,7 +202,7 @@ const tableData = [
       { "imgPath": "/images/clock.png", "text": "15节，90分钟/节" },
       { "imgPath": "/images/desk.png", "text": "10-15人" },
       { "imgPath": "/images/book.png", "text": "针对高二一模考阅读、语法、写作、翻译等难点" },
-      { "imgPath": "/images/calendar.png", "text": "周六班（10.12—明年1.11）、周日班（10.13—明年1.12）、寒假集训班" },
+      { "imgPath": "/images/calendar.png", "text": "周六班（10.12开班）、周日班（10.13开班）、周中晚班、寒假集训班" },
       { "imgPath": "/images/level.png", "text": "<label class='table-big-font'>所有高二学生（不分文理）</label>" }
     ],
     listIndex: 1
@@ -218,8 +218,8 @@ const tableData = [
       { "imgPath": "/images/clock.png", "text": "12节，90分钟/节" },
       { "imgPath": "/images/desk.png", "text": "10-15人" },
       { "imgPath": "/images/book.png", "text": "高中语文写作、文学常识" },
-      { "imgPath": "/images/calendar.png", "text": "周日班（9.22开班）、寒假集训班" },
-      { "imgPath": "/images/level.png", "text": "<label class='table-big-font'>所有高一、高二、高三学生（不分文理）</label>" }
+      { "imgPath": "/images/calendar.png", "text": "周日班（10.13开班）、寒假集训班" },
+      { "imgPath": "/images/level.png", "text": "<label class='table-big-font'>所有高二学生（不分文理）</label>" }
     ],
     listIndex: 1
   }
