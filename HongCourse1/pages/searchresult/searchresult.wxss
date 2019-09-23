@@ -1,0 +1,28 @@
+/* pages/searchresult/searchresult.wxss */
+.search-container {
+  background-color: #ececec;
+  min-height: 100vh;
+  padding: 20rpx 0;
+}
+
+.weui-form-preview {
+  margin: 0 20rpx 20rpx 20rpx;
+  border: 1rpx solid rgba(0,0,0,.1);
+}
+
+.weui-form-preview:active {
+  background-color: #f0f0f0;
+}
+
+.weui-form-preview__bd, .weui-form-preview__hd {
+  text-align: justify;
+}
+
+.weui-form-preview__value_in-hd {
+  display: inline;
+  font-size: 35rpx;
+}
+
+.weui-price {
+  float: right;
+}

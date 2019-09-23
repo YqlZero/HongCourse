@@ -1,11 +1,11 @@
 <!--pages/courselist/courselist.wxml-->
 <view class="list-container">
   <view class="left">
-    <view class="left-item {{listSelected.category[index].bgColor}}" wx:for="{{listSelected.category}}" bindtap="bindLeftItemTap" mark:index="{{index}}">
+    <view class="left-item {{bgColor[index]}}" wx:for="{{category}}" bindtap="bindLeftItemTap" mark:index="{{index}}">
       {{item.name}}
     </view>
   </view>
   <view class="right">
-      <view class="right-item" wx:for="{{courseSelected}}" bindtap="bindRightItemTap">{{item}}</view>
+      <view class="right-item" wx:for="{{courseSelected}}" bindtap="bindRightItemTap" mark:index="{{item.index}}">{{item.name}}</view>
   </view>
 </view>

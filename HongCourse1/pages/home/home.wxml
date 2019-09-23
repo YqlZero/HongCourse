@@ -1,4 +1,5 @@
 <!--pages/home/home.wxml-->
+<mp-toptips msg="{{info}}" type="info" show="{{info}}"></mp-toptips>
 <view class="container-home">
   <image class="home-bg" src="/images/home-bg.png" >
   </image>
@@ -11,9 +12,10 @@
     </block>
   </swiper>
   <view class="topu-font">托普教育</view>
-  <view class="weui-cells weui-cells_after-title search">
-      <view class="weui-cell weui-cell_input">
-        <input class="weui-input" maxlength="10" placeholder="搜索：高一/托福/生物" />
+  <view class="weui-cells weui-cells_after-title search">    
+      <view class="weui-cell weui-cell_input"> 
+        <icon type="search" color="rgb(112,173,71)"/>     
+        <input class="weui-input" maxlength="10" placeholder="高一/托福/生物" bindconfirm="bindSearchConfirm" />
       </view>
     </view>
   <view class="courses">
@@ -26,11 +28,11 @@
       <view>高中课程</view>
     </view>
     <view class="course">
-      <image class="img-course" bindtap="bindButtonTap"  src="/images/reread.png"></image>
+      <image class="img-course" bindtap="bindClosedTap"  src="/images/reread.png"></image>
       <view>中复班</view>
     </view>
     <view class="course">
-      <image class="img-course" bindtap="bindButtonTap" src="/images/junior.png"></image>
+      <image class="img-course" bindtap="bindClosedTap" src="/images/junior.png"></image>
       <view>初中课程</view>
     </view>
   </view>

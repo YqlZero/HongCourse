@@ -53,3 +53,8 @@
   width: 200rpx;
   height: 200rpx;
 }
+
+.weui-input {
+  margin-left: 20rpx;
+  font-size:30rpx;
+}

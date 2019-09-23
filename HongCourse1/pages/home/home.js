@@ -16,6 +16,7 @@ Component({
       '/images/logo-n1.png',
       '/images/logo-n2.png'
     ],
+    info: "",
     indicatorDots: false,
     autoplay: true,
     interval: 3000,
@@ -27,6 +28,9 @@ Component({
     attached: function () { 
       this.setData({
         search: this.search.bind(this)
+      })
+      wx.setNavigationBarTitle({
+        title: "鸿课程"
       })
     },
     moved: function () { },
@@ -56,6 +60,20 @@ Component({
         }
       });
     },
+    bindClosedTap: function (e) {
+      this.setData({
+        info: "敬请期待"
+      })
+    },
+    bindSearchConfirm: function (e) {
+      wx.navigateTo({
+        url: '../searchresult/searchresult',
+        success: function (res) {
+          // 通过eventChannel向被打开页面传送数据
+          res.eventChannel.emit('acceptDataFromOpenerPage', { keyword: e.detail.value })
+        }
+      });
+    }
   },
 
   pageLifetimes: {

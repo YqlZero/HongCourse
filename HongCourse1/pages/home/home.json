@@ -4,6 +4,6 @@
     "mp-cell": "../../components/cell/cell",
     "mp-cells": "../../components/cells/cells",
     "mp-form": "../../components/form/form",
-    "mp-searchbar": "../../components/searchbar/searchbar"
+    "mp-toptips": "../../components/toptips/toptips"
   }
 }

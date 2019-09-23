@@ -3,7 +3,8 @@
     "pages/home/home",
     "pages/subscribe/subscribe",
     "pages/courselist/courselist",
-    "pages/coursedetail/coursedetail"
+    "pages/coursedetail/coursedetail",
+    "pages/searchresult/searchresult"
   ],
   "tabBar": {
     "custom": true,
@@ -21,7 +22,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json"
